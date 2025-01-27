@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask & Earn</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #eaecee, #d5d8dc);
+            color: #2c3e50;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: linear-gradient(135deg, #1abc9c, #16a085);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+        header p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            text-align: center;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .feature {
+            background: #fff;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .feature h3 {
+            font-size: 1.5rem;
+            color: #1abc9c;
+        }
+        .feature p {
+            font-size: 1.1rem;
+            color: #34495e;
+        }
+        .signup {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #f4f6f7;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .signup h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-family: 'Georgia', serif;
+            color: #2c3e50;
+        }
+        .signup form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        .signup input {
+            width: 80%;
+            max-width: 400px;
+            padding: 0.8rem;
+            border: 1px solid #bbb;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        .signup button {
+            background: #1abc9c;
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .signup button:hover {
+            background: #16a085;
+        }
+        footer {
+            margin-top: 2rem;
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        footer a {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ask & Earn</h1>
+        <p>Welcome to a platform for deep thinkers. Here, your profound questions about reality, science, and philosophy spark innovation and earn rewards. Let's shape the future together.</p>
+    </header>
+    <div class="container">
+        <h2>Why Join Us?</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Engage with Depth</h3>
+                <p>Submit thought-provoking, intellectual questions that challenge the boundaries of knowledge and spark meaningful discussions.</p>
+            </div>
+            <div class="feature">
+                <h3>Earn Rewards</h3>
+                <p>Your curiosity is valuable. Exchange your questions for real rewards, including cash and exclusive perks.</p>
+            </div>
+            <div class="feature">
+                <h3>Impact the Future</h3>
+                <p>Contribute to the evolution of AI by asking questions that explore reality, challenge norms, and inspire innovation.</p>
+            </div>
+        </div>
+
+        <div class="signup">
+            <h2>Become a Visionary</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="What Drives Your Curiosity?" required>
+                <button type="submit">Sign Up Now</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Ask & Earn. All rights reserved. <a href="#">Contact Us</a></p>
+    </footer>
+</body>
+</html>
